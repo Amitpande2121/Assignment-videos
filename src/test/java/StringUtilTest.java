@@ -5,7 +5,22 @@ public class StringUtilTest {
 
     @Test
     public void shouldGetLengthofAString(){
-        String testString= "Hello World";
-        Assert.assertEquals(testString.length(),11);
+        int length= "Hello World".length();
+        Assert.assertEquals(length,11);
     }
+    @Test
+    public void shouldAddTwoNumbers(){
+
+
+        int sum = new Calculator().getSum(10,20);
+
+        Assert.assertEquals(30,sum);
+    }
+    @Test
+    public void shouldMultiplyTwonumbers(){
+        int result = new Calculator().getResultOfMultiplication(10, 10);
+        Assert.assertEquals(100,result);
+    }
+
+
 }
